@@ -1,7 +1,7 @@
-id=magisk-google-dns
-name=Magisk Google DNS
-version=v10
-versionCode=10
-author=tfae
-description=Use Google's DNS servers instead of the provided by the ISP
+id=magisk-cloudflare-dns
+name=Magisk Cloudflare DNS
+version=v1
+versionCode=1
+author=iSm1le
+description=Use Cloudflare's DNS servers instead of the provided by the ISP
 minMagisk=17000

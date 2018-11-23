@@ -41,8 +41,8 @@ LATESTARTSERVICE=true
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "       Magisk Google DNS       "
-  ui_print "           tfae @ XDA          "
+  ui_print "     Magisk Cloudflare DNS     "
+  ui_print "            iSm1le             "
   ui_print "*******************************"
 }
 
@@ -54,12 +54,12 @@ print_modname() {
 # Check the documentations for more info about how Magic Mount works, and why you need this
 
 # This is an example
-REPLACE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
-"
+#REPLACE="
+#/system/app/Youtube
+#/system/priv-app/SystemUI
+#/system/priv-app/Settings
+#/system/framework
+#"
 
 # Construct your own list here, it will override the example above
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
@@ -102,7 +102,7 @@ set_permissions() {
 resolve_conf() {
   if [ -a /system/etc/resolv.conf ]; then
     mkdir -p $MODPATH/system/etc/
-    printf "nameserver 8.8.8.8\nnameserver 8.8.4.4" >> $MODPATH/system/etc/resolv.conf
+    printf "nameserver 1.1.1.1\nameserver 1.0.0.1" >> $MODPATH/system/etc/resolv.conf
     touch $MODPATH/auto_mount
   fi
 }
