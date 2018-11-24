@@ -22,7 +22,7 @@
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
-AUTOMOUNT=false
+AUTOMOUNT=true
 
 # Set to true if you need to load system.prop
 PROPFILE=true
@@ -102,7 +102,7 @@ set_permissions() {
 resolve_conf() {
   if [ -a /system/etc/resolv.conf ]; then
     mkdir -p $MODPATH/system/etc/
-    printf "nameserver 1.1.1.1\nameserver 1.0.0.1" >> $MODPATH/system/etc/resolv.conf
+    printf "nameserver 1.1.1.1\nnameserver 1.0.0.1" >> $MODPATH/system/etc/resolv.conf
     touch $MODPATH/auto_mount
   fi
 }
