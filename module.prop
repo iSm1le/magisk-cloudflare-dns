@@ -1,7 +1,7 @@
 id=magisk-cloudflare-dns
 name=Magisk Cloudflare DNS
-version=v1
-versionCode=1
+version=v1.1
+versionCode=11
 author=iSm1le
 description=Use Cloudflare's DNS servers instead of the provided by the ISP
 minMagisk=17000
