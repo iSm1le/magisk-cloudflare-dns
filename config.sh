@@ -31,7 +31,7 @@ PROPFILE=true
 POSTFSDATA=true
 
 # Set to true if you need late_start service script
-LATESTARTSERVICE=false
+LATESTARTSERVICE=true
 
 ##########################################################################################
 # Installation Message
@@ -42,6 +42,7 @@ LATESTARTSERVICE=false
 print_modname() {
   ui_print "*******************************"
   ui_print "     Magisk Cloudflare DNS     "
+  ui_print "              by               "
   ui_print "            iSm1le             "
   ui_print "*******************************"
 }
